@@ -1,0 +1,45 @@
+pipeline
+{
+agent any
+
+stages
+{
+stage('Build')
+{
+steps
+{
+echo "Build Job Done Successfully"
+}
+}
+
+stage(Deployment)
+{
+steps
+{
+	echo "Deployment to QA Done Successfully"
+}
+
+}
+
+stage('Testing')
+{
+steps
+{
+
+	echo "Testing Successfully Done in QA Environment"
+}
+
+}
+
+stage('Production')
+{
+steps
+{
+	echo "Deploment to Production Environment done successfully"
+}
+
+
+}
+
+}
+}
